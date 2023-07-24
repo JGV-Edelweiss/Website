@@ -1,0 +1,69 @@
+/* Reset CSS, um standardmäßige Browser-Stile zu entfernen */
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0; /* Hintergrundfarbe für die Reiter */
+}
+
+.nav-links li {
+  padding: 10px 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000; /* Textfarbe für die Reiter */
+}
+
+.main-content {
+  background-color: #fff; /* Hintergrundfarbe für den Hauptinhalt auf Computer */
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.aktuelles {
+  padding: 20px;
+}
+
+/* Footer-Styling hier einfügen */
+
+/* Media Query für das responsive Design auf Mobilgeräten */
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Reiter ausblenden auf Mobilgeräten */
+  }
+
+  .nav-links.show {
+    display: flex; /* Reiter anzeigen, wenn geklickt wird */
+  }
+
+  .nav-links.show li {
+    padding: 10px;
+  }
+
+  .main-content {
+    width: 100%; /* Hauptinhalt auf Mobilgeräten über die gesamte Breite */
+  }
+}
