@@ -3,11 +3,13 @@
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  background-color: #504A6E;
 }
 
 header {
@@ -15,16 +17,53 @@ header {
   background-color: #504A6E;
 }
 
+/* styles.css */
+footer {
+  background-color: #f5deb3;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  width: 60%;
+  margin-left: auto; /* Zentriere den Footer horizontal */
+  margin-right: auto; /* Zentriere den Footer horizontal */
+  border-radius: 10px;
+}
+
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #555;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
 img {
   width: 100%;
   height: auto;
+}
+
+.header-title {
+  font-size: 60px;
+  color: #f5deb3;
+  text-align: center;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  background-color: #f0f0f0; /* Hintergrundfarbe für die Reiter */
+  background-color: #f5deb3; /* Hintergrundfarbe für die Reiter */
+  width: 62%;
+  margin-left: auto; /* Zentriere den Footer horizontal */
+  margin-right: auto; /* Zentriere den Footer horizontal */
+  border-radius: 10px;
 }
 
 .nav-links li {
@@ -37,14 +76,20 @@ img {
 }
 
 .main-content {
-  background-color: #fff; /* Hintergrundfarbe für den Hauptinhalt auf Computer */
+  background-color: #f5deb3; /* Hintergrundfarbe für den Hauptinhalt auf Computer */
   padding: 20px;
   width: 60%;
   margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .aktuelles {
   padding: 20px;
+}
+
+.werSindWir {
+  margin-top: 20px;
 }
 
 /* Footer-Styling hier einfügen */
