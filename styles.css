@@ -110,6 +110,18 @@ img {
   }
 
   .main-content {
-    width: 100%; /* Hauptinhalt auf Mobilgeräten über die gesamte Breite */
+    width: 85%; /* Hauptinhalt auf Mobilgeräten über die gesamte Breite */
+  }
+
+  footer {
+    background-color: #f5deb3;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 85%;
+    margin-left: auto; /* Zentriere den Footer horizontal */
+    margin-right: auto; /* Zentriere den Footer horizontal */
+    border-radius: 10px;
   }
 }
