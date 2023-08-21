@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Stieldorferhohn, jgv edelweiss, Junggesellen Stieldorferhohn">
+  <meta name="description" content="JGV Edelweiss 1946 aus Stieldorferhohn">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
@@ -19,6 +22,21 @@
 <body>
 <header class="header">
   <h1 class="header-title">JGV Edelweiss 1946</h1>
+  <h1 class="header-title-mobile">JGV</h1>
+  <h1 class="header-title-mobile">Edelweiss</h1>
+  <div style="display: flex;justify-content: space-around;align-items: center;">
+    <h1 style="margin: auto;" class="header-title-mobile">1946</h1>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">
+        <img src="/images/wappen2.5.png" style="width: 70%;height: 70%; padding-top: 8%;">
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Startseite</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </div>
+  </div>
+
   <nav>
     <ul class="nav-links">
       <li><a href="index.html">Startseite</a></li>
@@ -51,18 +69,19 @@
   </section>
 </main>
 
-<footer>
-  <div class="social-icons">
+<footer style="margin-bottom: 10px;">
+  <div class="social-icons" style="display:flex; justify-content: space-around;">
     <a href="https://www.instagram.com/jgv.stieldorferhohn/" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-instagram"></i>
     </a>
     <a href="https://www.facebook.com/JGVsthohn" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-facebook"></i>
     </a>
+    <a href="impressum.html" target="_blank" rel="noopener noreferrer" style="font-size: 16px;">
+      Impressum
+    </a>
   </div>
-  <a href="impressum.html" target="_blank" rel="noopener noreferrer">
-    Impressum
-  </a>
+
 </footer>
 
 <script src="script.js"></script>

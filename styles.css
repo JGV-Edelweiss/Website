@@ -17,6 +17,10 @@ header {
   background-color: #504A6E;
 }
 
+.header-title-mobile {
+  display: none;
+}
+
 /* styles.css */
 footer {
   background-color: #f5deb3;
@@ -92,13 +96,29 @@ img {
   margin-top: 20px;
 }
 
+.dropdown {
+  display: none;
+}
+
 /* Footer-Styling hier einfügen */
 
 /* Media Query für das responsive Design auf Mobilgeräten */
 
 @media screen and (max-width: 768px) {
+
+  .header-title {
+    display: none;
+  }
+  .header-title-mobile {
+    font-size: 60px;
+    color: #f5deb3;
+    text-align: center;
+    display:inline;
+  }
+
   .nav-links {
-    display: none; /* Reiter ausblenden auf Mobilgeräten */
+      background-color: red;
+      display: none;
   }
 
   .nav-links.show {
@@ -124,4 +144,51 @@ img {
     margin-right: auto; /* Zentriere den Footer horizontal */
     border-radius: 10px;
   }
+
+
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: 2px solid #f5deb3;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  /* The container <div> - needed to position the dropdown content ... mit padding right lässt sich der button verschieben !!! */
+  .dropdown {
+    display: inline-block;
+    position: absolute;
+    right:0;
+    width:15%;
+    height: 25%;
+    padding-right: 2%;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
 }
